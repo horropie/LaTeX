@@ -1,0 +1,72 @@
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage [ ngerman ]{ babel }
+\usepackage [ T1 ]{ fontenc }
+\usepackage{multirow}
+
+
+\title{Mein siebenundzwanzigstes \LaTeX\ -  Dokument}
+\author{Jakob Hollweck}
+\date{\today}
+\DeclareMathOperator*{\sinc}{sinc}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb} %amsthm für Definitionen, Beweise, Sätze
+\pagestyle{headings}
+
+% um \noindent immer zu vermeiden 
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\begin{titlepage}
+		\title{Formeln}
+		\author{Jakob Hollweck}
+		\date{\today}
+	\end{titlepage}
+	
+	\maketitle
+	
+	\section{Kleiner Fermat}
+	Der \textit{kleine Fermatsche Satz} (nach Pierre de Fermat) ist ein wichtiger Satz der Zahlentheorie. Er besagt, dass für alle $a \in \mathbb{Z}\ $ und $ p \in \mathbb{P}\ $ ($\mathbb{P}\ $ bezeichnet hier die Primzahlen) die Kongruenz \[ a^p \equiv a (\mathrm{mod }p)
+	\] gilt.
+	
+	\section{Fundamentalsatz der Algebra}
+	Nach dem Fundamentalsatz der Algebra besitzt jedes Polynom $ P(x)= \sum_{i=0}^d a_ix^i$ mit $a_i \in \mathbb{R}, a_d \neq 0$ (\textit{d} heißt Grad des Polynoms) genau \textit{d} komplexe Nullstellen. Ist die nichtreelle Zahl \textit{z} eine Nullstelle von \textit{P}, so auch ihr komplex konjugiertes $\overline{z}$. Somit lässt sich \textit{P} folgendermaßen als Produkt von Linearfaktoren darstellen: 
+	\[ 
+	P(x)=a \cdot \prod_{j=1}^{r}(x-x_j) \cdot \prod_{k=1}^{s} (x-z_k)(x-\overline{z_k})
+	\]
+	mit $r+2s=d$
+	
+	\section{Winkelintegration}
+	Die folgende Formel stammt aus Gaigalas \textit{et al.}, J.Pys. B \textbf{30}, 3747 (1997).Sie beschreibt eine mögliche Form eines Zweiteilchenoperators $\hat{G}$ und sei an dieser Stelle nicht weiter erklärt, da sie nur zum Üben des Formelsatzes dient.
+	\[
+	\hat{G}(I) \sim \sum_{\kappa_{12}, \sigma_{12}, \kappa'_{12}, \sigma'_{12}}
+	\sum_p\theta(n\lambda, \Xi)A_p,-p^{(kk)}(n\lambda, \Xi)
+	\]
+	
+	\section{Kanonische Quantisierung}
+	Um das elektromagnetische Feld kanonisch zu quantisieren, muss man das Vektorpotential $\vec{A}$ in Moden zu entwickeln. Dargestellt ist das in der nachfolgenden Gleichung:
+	\begin{equation}
+	\hat{\vec{A}}(x) = \sum_J\sum_{\lambda=1}^2 \frac{1}{\sqrt{\omega_J}}\vec{\varepsilon}_{J,\lambda}\left(e^{i\omega_Jt}\mathcal{A}_{J,\lambda}(\vec{r})\hat{a}_{J,\lambda}+e^{i\omega_Jt}\tilde{\mathcal{A^*}}_{J,\lambda}(\vec{r})
+	\hat{a}^{\dagger}_{J,\lambda}
+	\right)
+	\end{equation}
+	
+	\section{Elektrodynamik}
+	Grundlage der klassischen Elektrodynamik sind die vier Maxwellgleichungen. Hier zunächst die Divergenz und die Rotation des \textit{E}-Feldes:
+	
+	\[
+	
+	\sinc(x) = \frac{\sin(x)}{x}
+	
+	\]
+	
+	\begin{align}
+	
+	\vec{\nabla} \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} & \vec{\nabla} \times\vec{E} &= - \frac{\partial \vec{B}}{\partial t}
+	
+	\end{align}
+	
+\end{document}
