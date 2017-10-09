@@ -1,0 +1,37 @@
+\documentclass[a4paper, 10pt,onecolumn]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\title{Mein erstes \LaTeX-Dokument\thanks{John Wigg}} 
+\author{Jakob Hollweck} %auch nach \begindocument möglich
+\date{\today}
+\setlength{\parindent}{0pt}
+
+\begin{document}\tableofcontents
+\maketitle
+\section{Der erste Abschnitt}
+\subsection{Der erste Unterabschnitt}
+
+So fängt es also an, mein erstes \LaTeX-Dokument!\\
+Sonderlich viel muss für den Anfang nicht drin stehen.
+
+\paragraph{Mein erster Paragraph}
+
+Hier gehört \textbf{\underline{\emph{Text}}} hin.
+\subparagraph{Eine Aufzählung}
+\begin{itemize}
+	\item Ein erster Punkt
+	\item \dots
+	\item Ein letzter Punkt
+	\begin{itemize}
+		\item Ein Unterpunkt \footnote[10]{Eine Fußnote}
+		\item Apostrophe \footnote{Als Code, sonst auch anders möglich} 
+		\item \glqq{}--\grqq{} Mit Leerzeichen
+		\item \glq\-\grq\, z\,B mit Abb.~1 gibt es auch geschützte Leerzeichen
+		\item \glqq---\grqq Ohne Leerzeichen
+	\end{itemize}
+\end{itemize}
+
+
+\end{document}
