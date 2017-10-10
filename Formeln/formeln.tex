@@ -8,12 +8,13 @@
 \title{Mein siebenundzwanzigstes \LaTeX\ -  Dokument}
 \author{Jakob Hollweck}
 \date{\today}
-\DeclareMathOperator*{\sinc}{sinc}
+
 
 \usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{amsmath, amssymb} %amsthm für Definitionen, Beweise, Sätze
 \pagestyle{headings}
+\DeclareMathOperator*{\sinc}{sinc}
 
 % um \noindent immer zu vermeiden 
 
@@ -58,15 +59,30 @@
 	Grundlage der klassischen Elektrodynamik sind die vier Maxwellgleichungen. Hier zunächst die Divergenz und die Rotation des \textit{E}-Feldes:
 	
 	\[
-	
 	\sinc(x) = \frac{\sin(x)}{x}
-	
 	\]
 	
+	\begin{align*}
+		\vec{\nabla} \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} & \vec{\nabla} \times\vec{E} &= - \frac{\partial \vec{B}}{\partial t}
+		\intertext{und nun für das \textit{B}-Feld:}
+		\vec{\nabla} \cdot \vec{B} &= 0 & \vec{\nabla} \times \vec{B} &= \mu_0\vec{\jmath}+\frac{1}{c^2}\frac{\partial\vec{E}}{\partial t}
+	\end{align*}
+	
+	Integralsätze sind meist sehr hilfreich bei Rechnen, so z.\,B. \textit{Satz von Gauß-Ostrogradski} und der \textit{Greensche Satz}.
+	
 	\begin{align}
-	
-	\vec{\nabla} \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} & \vec{\nabla} \times\vec{E} &= - \frac{\partial \vec{B}}{\partial t}
-	
+	\int_V\mathrm{div}\vec{F}\mathrm{d}^nV &= \oint_S\vec{F}\cdot\vec{n} \mathrm{d}^{n-1}S\\
+	\iint_D\left(\frac{\partial g}{\partial x}(x,y)-\frac{\partial f}{\partial y}(x,y)\right)\mathrm{d}x\mathring{d}y &= \oint_C(f(x,y)\mathrm{d}x+g(x,y)\mathrm{d}y)
 	\end{align}
+	
+	\section{Lange Gleichung}
+	Da das folgende Matrixelement nicht auf eine Zeile passt, wurde es mit der \glqq\ multline \grqq\ Umgebung gesetzt:
+	\begin{multline}
+		\mathcal{M}^{n}=2\pi\delta(\ell-n+\ell\beta)\Delta\varPhi(-1)^ne^{-in\phi}\times\left\{e^{-in\phi}J_{n-1}(\ell_n\alpha)\left[\mathcal{I}_+-\frac{\alpha e^{-i\phi}}{2}\mathcal{I}_0\right] \right.\\ +e^{i\varphi} \left. J_{n+1}(\ell_n\alpha)\left[\mathcal{I}_--\frac{\alpha e^{-i\phi}}{2}I_0\right]+J_n(\ell_n\alpha)[\mathcal{I}_2-\beta\mathcal{I}_0]
+		\right\}
+	\end{multline}
+	
+	
+	
 	
 \end{document}
