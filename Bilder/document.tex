@@ -42,6 +42,15 @@ Das Bild kann auch zugeschnitten werden:
 	\includegraphics[clip, trim=7cm 7cm 5cm 6cm]{lotze.jpg}
 	\includegraphics[clip, trim=7cm 7.5cm 6cm 7.5cm]{lotze.jpg}
 \end{center}
-
+\newpage
+\subsection{PDFs als Bilder}
+Dies ist mein erstes \LaTeX-Dokument, eingebunden als Bild:
+\begin{center}
+	\includegraphics[scale=0.25, page=2]{hellooworld.pdf}
+\end{center}
+Hier nochmal mit einem Rahmen:
+\begin{center}
+	\fbox{\includegraphics[scale=0.25,page=2]{hellooworld.pdf}}
+\end{center}
 
 \end{document}
