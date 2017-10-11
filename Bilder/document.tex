@@ -17,20 +17,23 @@
 
 \begin{document}
 \tableofcontents
+\listoffigures
 \maketitle
 
 \section{Bilder in \LaTeX}
 Wenn Bilder eingebunden werden, stehen sie standardmäßig auf der Grundlinie: \includegraphics[width=11pt]{lotze.jpg}.
 Dies kann nützlich sein, wenn man ein bestimmtes Symbol nur als Bild vorliegen hat. Im Normalfall möchte man das Bild jedoch meist zentrieren. Wenn das Bild zu groß ist, muss es skaliert werden:
 
-\begin{center}
+\begin{figure}[ht!]
+	\centering
 	\includegraphics[scale=0.5]{lotze.jpg}
-\end{center}
-
+	\caption{Nicht die Sombrero-Galaxie}
+	\label{Lotze}
+\end{figure}
 \newpage
 
 \subsection{Skalieren und Beschneiden}
-Durch die Angabe von Höhe und Breite kann das Bild verzerrt werden.
+Durch die Angabe von Höhe und Breite kann \eqref{Lotze} verzerrt werden.
 
 \begin{center}
 	\includegraphics[width=10cm, height= 5cm]{lotze.jpg}
@@ -52,5 +55,8 @@ Hier nochmal mit einem Rahmen:
 \begin{center}
 	\fbox{\includegraphics[scale=0.25,page=2]{hellooworld.pdf}}
 \end{center}
+
+
+	
 
 \end{document}
