@@ -3,11 +3,11 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{multirow}
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{amsmath, amssymb}
 \usepackage{grffile} %einfacheres einbinden von Dateipfaden
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 
 \title{Schlechte Bilder\thanks{Danke an John Wigg}} 
@@ -18,6 +18,7 @@
 \begin{document}
 \tableofcontents
 \listoffigures
+\listoftables
 
 \section{Autokorrelation }
 \subsection{Definition}
@@ -45,11 +46,11 @@ $0.001 V^4sm^{-4}$ & $0.32 V^4sm^{-4}$\\ \hline \hline
 \end{table}
 \section{Ionenerträge}
 
-In \ref{Tabelle2} (auf Seite 2) sind Ionenerträge aufgeführt. Die Tabelle ist dem Artikel [1] entnommen und leicht verändert.
+In \ref{Tabelle2} (auf Seite 2) sind Ionenerträge aufgeführt. Die Tabelle ist dem Artikel \cite{Stock} entnommen und leicht verändert.
 
 \begin{table}[!h]
 \centering
-\caption{Relative Ionenerträge nach resonanter 1$s^{-1}3p-$ Anregung in Neon. Neben den berechneten Werten sind die experimentellen Daten von Morgan $et al.$ [2] aufgeführt.}
+\caption{Relative Ionenerträge nach resonanter 1$s^{-1}3p-$ Anregung in Neon. Neben den berechneten Werten sind die experimentellen Daten von Morgan \textit{et al.} \cite{Morgan} aufgeführt.}
 \label{Tabelle2}
 \begin{tabular}{ccc}
 \hline \hline
@@ -73,9 +74,13 @@ N$e^4+$ & -- & 0.002\\
 \section{Nicht die Sombrero-Galaxie}
 
 Dieser Abschnitt hat nichts zu tun mit den Tabellen \ref{Tabelle1} und \ref{Tabelle2} oder der Gleichung \eqref{eq:formel}. Er handelt nicht von der Sombrero-Galaxie, Objekt Nummer M 104 im Messier-Katalog. Ein Bild der Galaxie kann in Abb. \ref{Tabelle1} auf Seite 2 bestaunt werden.
+\newpage
 
-
-
+\begin{thebibliography}{2}
+	\bibitem{Stock} S.Stock, R. Beerwerth und S.Fritzsche: 
+		\emph{Physical Review A} \textbf{95}, 053407 (2017)
+	\bibitem{Morgan} D.V.Morgan, M.Sagurton und R.J. Bartlett: \emph{Physical Review A} \textbf{55}, 1113 (1997)
+\end{thebibliography}
 
 
 \end{document}
