@@ -1,4 +1,4 @@
-\documentclass[a4paper, 10pt,onecolumn]{scrartcl}
+\documentclass[a4paper, 10pt,onecolumn, captions=tableheading]{scrartcl}
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -8,7 +8,8 @@
 \usepackage{amsmath, amssymb}
 \usepackage{grffile} %einfacheres einbinden von Dateipfaden
 \usepackage[hidelinks]{hyperref}
-
+\setkomafont{sectioning}{\rmfamily}
+\addtokomafont{author}{\scshape}
 
 \title{Schlechte Bilder\thanks{Danke an John Wigg}} 
 \author{Ich} %auch nach \begindocument möglich

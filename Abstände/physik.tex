@@ -2,10 +2,15 @@
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
 \usepackage{amsmath}
+\usepackage{mathptmx}
+\usepackage{lmodern} %verbesserte Version der Standardschrift
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
+\addtokomafont{pageheadfoot}{\sffamily}
+\addtokomafont{caption}{\small}
+\addtokomafont{captionlabel}{\bfseries}
+\addtokomafont{pagenumber}{\sffamily}
 
 \title{Physik}
 \author{Die \textsc{Wikipedia}-Autoren\thanks{Dies ist eine Kopie des Artikels \url{https://de.wikipedia.org/wiki/Physik}, Stand 8.\,10.\,2017. Es wurde lediglich die Schrödingergleichung auf Seite~\pageref{eq:schrödinger} eingefügt, um den Formelsatz zu demonstrieren.}}
@@ -19,7 +24,7 @@
 \maketitle
 
 \tableofcontents
-
+\setlength{\parindent}{3em}
 \begin{figure}
 	\centering
 	\includegraphics[width=12cm]{images/1.jpg}
@@ -39,7 +44,6 @@ Erkenntnisfortschritte führen beispielsweise zur Ausdehnung oder Einschränkung
 Erkenntnisse und Modelle aus der Physik werden intensiv in der Chemie, Geologie, Biologie, Medizin und vielen Ingenieurwissenschaften genutzt, in neuerer Zeit auch in Zweigen der Sozialwissenschaften und Wirtschaftswissenschaften.
 
 \section{Geschichte von Begriff und Disziplin der Physik}
-
 Die Disziplin der Physik in ihrer heutigen Gestalt hat ihre Ursprünge in der Philosophie, die sich seit der Antike im weitesten Sinne mit den Gründen und Ursachen aller Dinge befasst. Von Aristoteles bis ins beginnende 19. Jahrhundert wurde die Physik als das Teilgebiet der Philosophie verstanden, das sich als \emph{Naturlehre, Naturgeschichte, Chemie} oder \emph{angewandte Mathematik} mit den Gegebenheiten der Natur beschäftigt.\footnote{Rudolf Stichweh: \emph{Zur Entstehung des modernen Systems wissenschaftlicher Disziplinen -- Physik in Deutschland 1740--1890}, Suhrkamp Verlag, Frankfurt 1984.} Gegenüber den rein philosophischen Erklärungsversuchen der Naturvorgänge spielte die Art von Erkenntnis, die durch systematische und genaue Beobachtung, also empirisch zu gewinnen ist, lange Zeit keine Rolle. Ab Mitte des 13. und im Laufe des 14. Jahrhunderts plädierten dann einzelne Philosophen und Naturforscher -- meist ein- und dieselbe Person wie etwa Roger Bacon -- für ein größeres Gewicht der durch Beobachtung zu erlangenden Naturerkenntnis. Diese Tendenzen mündeten im 16. und 17. Jahrhundert, namentlich mit Galileo Galilei und Isaac Newton, in die Entwicklung einer Methodologie der physikalischen Erkenntnis, die vorrangig an empirischen und sogar experimentellen Standards orientiert ist und diesen vor überkommenen philosophischen Grundsätzen im Zweifelsfall sogar den Vorrang einräumt. Dieser Ansatz wurde zunächst als "`experimentelle Philosophie"' bezeichnet und führte beim Verständnis vieler unterschiedlicher Naturvorgänge rasch zu bedeutendem Erfolgen. Dennoch dauerte es noch bis ins 19. Jahrhundert, dass er sich endgültig in der Physik durchsetzen konnte und sie damit als eigenständige Disziplin in ihrem heutigen Sinn etablierte.
 
 Hinsichtlich ihrer Methode, ihres Gegenstandsbereichs, ihrer wissenschaftssystematischen und institutionellen Verortung teilt sich die Physik im Wesentlichen in zwei große Gebiete auf. Die theoretische Physik beschäftigt sich vorwiegend mit formalen mathematischen Beschreibungen und den Naturgesetzen. Sie abstrahiert Vorgänge und Erscheinungen in der wirklichen Natur in Form eines Systems von Modellen, allgemeingültigen Theorien und Naturgesetzen sowie intuitiv gewählten Hypothesen. Bei der Formulierung von Theorien und Gesetzen bedient sie sich vielfach der Methoden der Mathematik und der Logik. Ziel ist, das Verhalten eines Systems theoretisch vorherzusagen, damit dies durch Vergleich mit den Vorgängen und Erscheinungen in der wirklichen Natur überprüft werden kann. Diese Überprüfung in Form reproduzierbarer Messungen an gezielt gestalteten physikalischen Experimenten oder durch Beobachtung natürlicher Phänomene ist das Gebiet der Experimentalphysik. Das Ergebnis der Überprüfung bestimmt über die Gültigkeit und Vorhersagekraft des Modells und der darin gewählten Begriffe, Hypothesen und Methoden.
@@ -206,7 +210,7 @@ Methoden der Physik finden in vielen Themengebieten Anwendung, die nicht zum Ker
 	\item Die Umweltphysik beschäftigt sich in ihrer Forschung vor allem mit den Bereichen Energie und Klima.
 	\item Soziophysik und Ökonophysik wenden physikalische und statistische Methoden auf gesellschaftliche, wirtschaftliche, kulturelle und politische Phänomene an.
 \end{itemize}
-
+\appendix
 \section{Grenzen der physikalischen Erkenntnis}
 
 Der derzeitige Stand der Physik ist nach wie vor mit noch ungelösten Problemen konfrontiert. Zum einen handelt es sich dabei um den weniger grundsätzlichen Fall von Problemen, deren Lösung prinzipiell möglich, aber mit den derzeitigen mathematischen Möglichkeiten bestenfalls annäherbar ist. Zum anderen gibt es eine Reihe von Problemen, für die noch unklar ist, ob eine Lösung im Begriffsrahmen der heutigen Theorien überhaupt möglich sein wird. So ist es bislang nicht gelungen, eine vereinheitlichte Theorie zu formulieren, welche sowohl Phänomene beschreibt, die der elektroschwachen wie der starken Wechselwirkung unterliegen, wie auch solche, welche der Gravitation unterliegen. Erst bei einer solchen Vereinigung von Quantentheorie und Gravitationstheorie (allgemeiner Relativitätstheorie) könnten alle vier Grundkräfte einheitlich behandelt werden, sodass eine vereinheitlichte Theorie der Elementarteilchen resultierte.
@@ -220,7 +224,9 @@ Ob dieses Ziel prinzipiell oder praktisch erreichbar ist, ist eigentlich nicht m
 Die Beziehungen zur Philosophie sind traditionell eng, hat sich doch die Physik aus der klassischen Philosophie entwickelt, ohne ihr jemals grundsätzlich zu widersprechen, und waren nach heutigen Kategorien zahlreiche bedeutende Physiker zugleich wichtige Philosophen und umgekehrt. Gemäß der heutigen philosophischen Disziplinenunterscheidung ist die Physik insbesondere auf die Ontologie bezogen, welche die Grundstrukturen der Realität in möglichst allgemeinen Begriffen zu beschreiben versucht, darüber hinaus auf die Erkenntnistheorie, welche die Gütekriterien von Wissen überhaupt zu erfassen versucht, spezieller noch auf die Wissenschaftstheorie, welche die allgemeinen Methoden wissenschaftlicher Erkenntnis zu bestimmen versucht und natürlich auf die Naturphilosophie bzw. Philosophie der Physik, die oftmals als Unterdisziplin der Ontologie oder Wissenschaftstheorie behandelt wird, jedenfalls aber spezieller gerade auf die Einzelerkenntnisse der Physik bezogen arbeitet, deren Begriffssystem analysiert und ontologische Interpretationen physikalischer Theorien diskutiert.
 
 \section{Physik in der Gesellschaft}
-
+\begin{verse}
+	Hat der alte Hexenmeister, \\ sich dch einmal wegbegeben!\\
+\end{verse}
 \begin{figure}
 	\centering
 	\includegraphics[width=4cm]{images/6.jpg}
@@ -234,6 +240,9 @@ Da die Physik als die grundlegende Naturwissenschaft gilt, werden physikalisches
 	\item Die Frage nach der Ethik naturwissenschaftlicher Forschung wurde erstmals explizit aufgeworfen, als physikalische Entdeckungen Ende der 1930er Jahre auf die Möglichkeit einer Atombombe hindeuteten. Dieses Thema wird auch in der Literatur, etwa in Friedrich Dürrenmatts Theaterstück \emph{Die Physiker} aufgegriffen.
 	\item 2005 war das Jahr der Physik.
 \end{itemize}
+
+
+
 
 \begin{thebibliography}{7}
 	\bibitem{Ber} Ludwig Bergmann, Clemens Schaefer, Thomas Dorfmüller, Wilhelm T. Hering, Klaus Stierstadt: \emph{Lehrbuch der Experimentalphysik.} 11. Auflage, de Gruyter, 1998, ISBN 3-11-012870-5

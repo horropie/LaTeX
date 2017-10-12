@@ -1,0 +1,40 @@
+\documentclass[a4paper, 10pt,onecolumn, captions=tableheading]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+%\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{grffile} %einfacheres einbinden von Dateipfaden
+\usepackage[hidelinks]{hyperref}
+\setkomafont{sectioning}{\rmfamily}
+\addtokomafont{author}{\scshape}
+
+\title{Schlechte Bilder\thanks{Danke an John Wigg}} 
+\author{Ich} %auch nach \begindocument möglich
+\date{\today}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+Ich beginne hier mit meiner Aufzählung:
+\newcounter{enum}
+\begin{enumerate}
+	\item dies
+	\item das
+	\item jenes
+	\setcounter{enum}{\value{enumi}}
+\end{enumerate}
+Und hier setze ich meine Aufzählung fort:
+\begin{enumerate}
+	\setcounter{enumi}{\value{enum}}
+	%\setcounter{enumi}{3}
+	\item der
+	\item die
+	\item das
+\end{enumerate}
+
+
+	
+\end{document}
