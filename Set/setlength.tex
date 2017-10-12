@@ -1,0 +1,47 @@
+\documentclass[a4paper, 10pt,onecolumn, captions=tableheading]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+%\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{grffile} %einfacheres einbinden von Dateipfaden
+\usepackage[hidelinks]{hyperref}
+\setkomafont{sectioning}{\rmfamily}
+\addtokomafont{author}{\scshape}
+
+\title{Schlechte Bilder\thanks{Danke an John Wigg}} 
+\author{Ich} %auch nach \begindocument möglich
+\date{\today}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	
+\newlength{\abstand}	
+Hier steht (in Klammern) etwas Text.\\
+\settowidth{\abstand}{in Klammern}
+Hier steht (\hspace{\abstand}) etwas Text.\\
+Hier steht (\phantom{in Klammern}) etwas Text.
+
+
+\newcommand{\Celsius}[1]{#1\,$^\circ\mathrm{C}$}
+$T=23 \Celsius$
+
+\newcommand{\q}[1]{\glqq #1 \grqq}
+\q{Dies ist in Anführungszeichen.}
+
+
+\newlength{\fh}
+\settoheight{\fh}{A}
+\newcommand{\textimage}[1]{\includegraphics[height=\fh]{#1}}
+\textimage{lotze.jpg}-Lotze
+
+$\vec{y} = A\cdot\vec{x}$
+
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+
+$\vec{y} = A\cdot\vec{x}$
+
+
+\end{document}
