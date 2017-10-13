@@ -8,6 +8,7 @@
 \usepackage{amsmath, amssymb}
 \usepackage{grffile} %einfacheres einbinden von Dateipfaden
 \usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
 \setkomafont{sectioning}{\rmfamily}
 \addtokomafont{author}{\scshape}
 
@@ -65,6 +66,14 @@ N$e^4+$ & -- & 0.002\\
 
 \end{tabular}
 \end{table}
+
+Dagegen mit Booktabs: 
+
+\begin{center}
+%booktabs
+\begin{tabular}{lcc} \toprule & \multicolumn{2}{c}{Ionenerträge} \\ \cmidrule{2-3} Ion & Theorie & Exp.~\cite{Mor97} \\ \midrule Ne$^{1+}$ & $0.74$ & $0.65\pm0.02$ \\ Ne$^{2+}$ & $0.26$ & $0.31\pm0.02$ \\ Ne$^{3+}$ & --- & $0.03\pm0.01$ \\ Ne$^{4+}$ & --- & $0.002$ \\ \bottomrule \end{tabular}
+\end{center}
+
 
 \begin{figure}
 \centering

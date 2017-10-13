@@ -2,12 +2,23 @@
 \usepackage[ngerman]{babel} 
 \usepackage[T1]{fontenc} 
 \usepackage[utf8]{inputenc}
-\usepackage{biblatex} 
+\usepackage[style=authoryear, sorting=nty, maxbibnames=20, maxcitenames=3, backref]{biblatex} 
 \usepackage{csquotes}
 \usepackage{hyperref}
 \addbibresource{Knuth.bib}
+\addbibresource{literatur.bib}
 \begin{document}
 \noindent Viel zu lesen über \TeX{} findet 
-man im \TeX{}book \cite{Knuth1984}.
+man im \TeX{}book \autocite{Knuth1984}.
+
+\noindent 
+Die Theorie des Auger-Effekts ist beschrieben bei \textcite{AAberg1982}
+Zwei \glqq{}online\grqq{}-Einträge: \autocite{Kramida2015, Bezanson2015}
+Ein Artikel mit vielen Autoren: \autocite{Uiberacker2007}
+
 \printbibliography
+
+
+
+
 \end{document}
